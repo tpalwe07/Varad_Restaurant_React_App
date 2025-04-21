@@ -1,12 +1,13 @@
-import './App.css'
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import AppRouter from "./Components/Router/Router.jsx";
 
 function App() {
-
   return (
-    <>
-      <h1>Welcome to Varad Restaurant</h1>
-    </>
-  )
+    <RouterProvider router={AppRouter}>
+      <AppRouter />
+    </RouterProvider>
+  );
 }
 
-export default App
+export default App;
